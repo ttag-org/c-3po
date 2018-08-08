@@ -1,4 +1,4 @@
-# ttag
+# c-3po
 ------
 
 > This project was [formely named `c-3po`](https://github.com/ttag-org/ttag/issues/105) and later on renamed to `ttag`.
