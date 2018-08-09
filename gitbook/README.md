@@ -6,7 +6,7 @@
 > All new features will be applied to `ttag` package, the old `c-3po` packages will be supported only with bugfixes.
 > Follow this simple [migration guide](/MIGRATION.html#101)
 
-# Please refer to the new doc https://ttag.org.js
+# Please refer to the new doc https://ttag.js.org
 
 ## Modern javascript i18n localization library based on ES6 tagged templates and the good old GNU gettext
 
