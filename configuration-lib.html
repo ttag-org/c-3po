@@ -1,0 +1,613 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Configuration(ttag lib API) · ttag javascript es6 localization tool</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="translator-comments.html" />
+    
+    
+    <link rel="prev" href="configuration.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"ttag-org","repo":"ttag","type":"star","size":"small"}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">General</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="configuration.html">
+            
+                <a href="configuration.html">
+            
+                    
+                    Configuration(babel plugin)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="configuration-lib.html">
+            
+                <a href="configuration-lib.html">
+            
+                    
+                    Configuration(ttag lib API)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="translator-comments.html">
+            
+                <a href="translator-comments.html">
+            
+                    
+                    Leaving comments for translators
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="validation.html">
+            
+                <a href="validation.html">
+            
+                    
+                    Validation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="multiline-strings.html">
+            
+                <a href="multiline-strings.html">
+            
+                    
+                    Multiline strings
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="aliasing.html">
+            
+                <a href="aliasing.html">
+            
+                    
+                    Aliasing
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ignore-code-blocks.html">
+            
+                <a href="ignore-code-blocks.html">
+            
+                    
+                    Ignoring code blocks
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Tutorials</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="quick-start.html">
+            
+                <a href="quick-start.html">
+            
+                    
+                    Quick Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="localization-with-webpack.html">
+            
+                <a href="localization-with-webpack.html">
+            
+                    
+                    Localization with webpack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="translations-without-transpile.html">
+            
+                <a href="translations-without-transpile.html">
+            
+                    
+                    Translate without transpilation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">functions</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="reference-t-tag.html">
+            
+                <a href="reference-t-tag.html">
+            
+                    
+                    t (template literals)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="reference-ngettext.html">
+            
+                <a href="reference-ngettext.html">
+            
+                    
+                    ngettext (pluralization)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="reference-jt-tag.html">
+            
+                <a href="reference-jt-tag.html">
+            
+                    
+                    jt (jsx support)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="reference-gettext.html">
+            
+                <a href="reference-gettext.html">
+            
+                    
+                    gettext (simple strings)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="reference-contexts.html">
+            
+                <a href="reference-contexts.html">
+            
+                    
+                    c (contexts)
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">FAQ</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="why-use-msgid-for-ngettext.html">
+            
+                <a href="why-use-msgid-for-ngettext.html">
+            
+                    
+                    Why use msgid tag for ngettext?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="why-po-is-not-updated.html">
+            
+                <a href="why-po-is-not-updated.html">
+            
+                    
+                    Why .pot/.po files are not generated or updated?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="MIGRATION.html">
+            
+                <a href="MIGRATION.html">
+            
+                    
+                    Migration Guide
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="CHANGELOG.html">
+            
+                <a href="CHANGELOG.html">
+            
+                    
+                    CHANGELOG
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Configuration(ttag lib API)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="ttag-lib-api">ttag lib API</h1>
+<h3 id="addlocalestring-locale-object-podata">addLocale(string locale, object poData)</h3>
+<p>Register locale translations.</p>
+<p>Arguments:</p>
+<ul>
+<li><code>locale</code> (string): Locale name (i.e.: <code>&apos;uk&apos;</code>, <code>&apos;en&apos;</code>)</li>
+<li><code>poData</code> (object): parsed data from a <code>.po</code> file. An example library that is able to do this is 
+<a href="https://github.com/smhg/gettext-parser" target="_blank"><code>gettext-parser</code></a>.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> poData = {
+    <span class="hljs-string">&apos;headers&apos;</span>: {
+        <span class="hljs-string">&apos;plural-forms&apos;</span>: <span class="hljs-string">&apos;nplurals=2; plural=(n!=1);&apos;</span>
+    },
+    <span class="hljs-string">&apos;translations&apos;</span>: {
+        <span class="hljs-string">&apos;&apos;</span>: {
+            <span class="hljs-string">&apos;test&apos;</span>: { <span class="hljs-string">&apos;msgid&apos;</span>: <span class="hljs-string">&apos;test&apos;</span>, <span class="hljs-string">&apos;msgstr&apos;</span>: <span class="hljs-string">&apos;test translation&apos;</span> }
+        }
+    }
+}
+addLocale(<span class="hljs-string">&apos;en&apos;</span>, poData);
+</code></pre>
+<h3 id="uselocalestring-locale">useLocale(string locale)</h3>
+<p>Activates a locale. After setting the locale to be used, all strings marked for translations will be
+represented by the corresponding translation in the specified locale.</p>
+<p>Arguments:</p>
+<ul>
+<li><code>locale</code> (string): Locale name (i.e: <code>&apos;uk&apos;</code>, <code>&apos;en&apos;</code>)</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js">useLocale(<span class="hljs-string">&apos;uk&apos;</span>);
+</code></pre>
+<h3 id="uselocalesarray-locales">useLocales(Array<string> locales)</string></h3>
+<p>If you want to have multiple translations look up locations, you can use this 
+method. The library will try to resolve translations exactly in the same order as you
+specify in the <code>locales</code> argument.</p>
+<p>Arguments:</p>
+<ul>
+<li><code>locales</code> (Array<string>): List of locale names (i.e.: <code>&apos;uk&apos;</code>, <code>&apos;en&apos;</code>)</string></li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js">useLocales([<span class="hljs-string">&apos;en_US&apos;</span>, <span class="hljs-string">&apos;en&apos;</span>]);
+</code></pre>
+<h3 id="setdedentbool-value">setDedent(bool value)</h3>
+<blockquote>
+<p>Default: <code>true</code></p>
+</blockquote>
+<p>Activates or deactivates dedent for <a href="multiline-strings.html">multiline translatable strings</a>.</p>
+<p>Arguments:</p>
+<ul>
+<li><code>value</code> (bool): Activates or deactivates dedent.</li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js">setDedent(<span class="hljs-literal">false</span>);
+</code></pre>
+<h3 id="setdefaultlangstring-lang">setDefaultLang(string lang)</h3>
+<p>Sets default language that is used in your sources strings. This setting is used for plural forms extraction.
+Different language have different plural forms numbers and formulas.</p>
+<p>Arguments:</p>
+<ul>
+<li><code>lang</code> (string): ISO code for the language. See all available codes here at the <a href="https://www.gnu.org/software/gettext/manual/html_node/Usual-Language-Codes.html" target="_blank">GNU gettext manual</a></li>
+</ul>
+<p>Example:</p>
+<pre><code class="lang-js">setDefaultLang(<span class="hljs-string">&apos;uk&apos;</span>);
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="configuration.html" class="navigation navigation-prev " aria-label="Previous page: Configuration(babel plugin)">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="translator-comments.html" class="navigation navigation-next " aria-label="Next page: Leaving comments for translators">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Configuration(ttag lib API)","level":"1.4","depth":1,"next":{"title":"Leaving comments for translators","level":"1.5","depth":1,"path":"translator-comments.md","ref":"translator-comments.md","articles":[]},"previous":{"title":"Configuration(babel plugin)","level":"1.3","depth":1,"path":"configuration.md","ref":"configuration.md","articles":[]},"dir":"ltr"},"config":{"plugins":["anchorjs","github-buttons","ga","atoc"],"root":"./gitbook","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"atoc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"github-edit":{"repo":"ttag-org/ttag","branch":"master"},"github-buttons":{"buttons":[{"user":"ttag-org","repo":"ttag","type":"star","size":"small"}]},"ga":{"configuration":"auto","token":"UA-90721450-1"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"base":"https://github.com/ttag-org/ttag/edit/master/gitbook","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchorjs":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ttag javascript es6 localization tool","gitbook":"*"},"file":{"path":"configuration-lib.md","mtime":"2018-08-08T14:20:41.311Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2018-08-09T08:19:01.346Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-anchorjs/anchor-style.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
